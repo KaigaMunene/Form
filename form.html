@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form onsubmit="handleOnSubmit(event)" id="userdetails">
+      <fieldset>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required />
+        <p class="error" id="fname-error"></p>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required />
+        <p class="error" id="lname-error"></p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <p class="error" id="email-error"></p>
+        <label for="phonenumber">Phone Number:</label>
+        <input type="tel" id="phonenumber" name="phonenumber" required />
+        <p class="error" id="phone-error"></p>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required>
+          <option value="" disabled selected>Choose</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <label for="date">Date of birth:</label>
+        <input type="date" id="date" name="date of birth" required />
+        <p class="error" id="date-error"></p>
+        <label for="about">About Me:</label>
+        <textarea name="About Me" rows="10" cols="20" id="about"></textarea>
+        <p class="error" id="about-error"></p>
+        <button type="submit" id="button">Submit</button>
+      </fieldset>
+    </form>
+    <table id="tableContent">
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Gender</th>
+        <th>Date of Birth</th>
+        <th>About Me</th>
+      </tr>
+    </table>
+    <script type="text/javascript" src="form.js"></script>
+  </body>
+</html>
